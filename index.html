@@ -232,6 +232,16 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .section img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            .section div[style*="display: flex"] {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -250,7 +260,7 @@
                 <a href="https://github.com/juansolor" target="_blank" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:juan.solorzano@email.com" title="Email">
+                <a href="mailto:juanpablo.solorzanoojeda@gmail.com" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -263,7 +273,32 @@
         </section>
 
         <section class="section">
+            <h2><i class="fab fa-github"></i> Estadísticas de GitHub</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 30px;">
+                <img src="https://github-readme-stats.vercel.app/api?username=juansolor&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=70a5fd&icon_color=bf91f3&text_color=38bdae" alt="GitHub Stats" style="border-radius: 10px;">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juansolor&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=70a5fd&text_color=38bdae" alt="Top Languages" style="border-radius: 10px;">
+            </div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
+                <img src="https://img.shields.io/github/followers/juansolor?style=for-the-badge&logo=github&logoColor=white&color=667eea" alt="GitHub Followers">
+                <img src="https://img.shields.io/github/stars/juansolor?style=for-the-badge&logo=github&logoColor=white&color=667eea" alt="GitHub Stars">
+                <img src="https://komarev.com/ghpvc/?username=juansolor&style=for-the-badge&color=667eea" alt="Profile Views">
+            </div>
+
+            <div style="text-align: center;">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=juansolor&theme=tokyonight&hide_border=true&background=1a1b27&stroke=70a5fd&ring=bf91f3&fire=70a5fd&currStreakLabel=38bdae" alt="GitHub Streak" style="border-radius: 10px; max-width: 100%;">
+            </div>
+        </section>
+
+        <section class="section">
             <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+            
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="https://img.shields.io/badge/Full%20Stack-Developer-667eea?style=for-the-badge" alt="Full Stack">
+                <img src="https://img.shields.io/badge/Experience-2%2B%20Years-success?style=for-the-badge" alt="Experience">
+                <img src="https://img.shields.io/badge/Remote-Available-brightgreen?style=for-the-badge" alt="Remote">
+            </div>
+
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Frontend</h3>
@@ -331,23 +366,37 @@
             <h2><i class="fas fa-project-diagram"></i> Proyectos Destacados</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>E-Commerce Platform</h3>
-                    <p>Plataforma de comercio electrónico completa con panel de administración, gestión de inventario y pasarela de pagos.</p>
+                    <h3>PLC Control System (Deploy en Render)</h3>
+                    <p>Sistema de control PLC desplegado en producción con interfaz web interactiva para monitoreo y control industrial.</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <img src="https://img.shields.io/badge/Status-Live-success?style=flat-square" alt="Status">
+                        <img src="https://img.shields.io/badge/Deploy-Render-46E3B7?style=flat-square&logo=render&logoColor=white" alt="Deploy">
+                        <img src="https://img.shields.io/badge/Industry-Automation-orange?style=flat-square" alt="Industry">
+                    </div>
+                    
                     <div class="tech-tags">
                         <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Render</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" target="_blank">Ver Demo</a>
-                        <a href="#" target="_blank">Código Fuente</a>
+                        <a href="https://app-plc-1.onrender.com/" target="_blank">Ver Demo Live</a>
+                        <a href="https://github.com/juansolor/app-plc" target="_blank">Código Fuente</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <h3>Projeto Final Full Stack (Trabalho em Equipe)</h3>
                     <p>Aplicação web completa desenvolvida em equipe, demonstrando habilidades de colaboração e desenvolvimento full stack.</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <img src="https://img.shields.io/github/stars/juansolor/projeto_final_fullstack_grupo_3?style=flat-square&logo=github" alt="Stars">
+                        <img src="https://img.shields.io/badge/Team-5%20Members-blue?style=flat-square" alt="Team">
+                        <img src="https://img.shields.io/badge/Course-Toti-purple?style=flat-square" alt="Course">
+                    </div>
+                    
                     <div class="tech-tags">
                         <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">HTML5</span>
@@ -363,6 +412,13 @@
                 <div class="project-card">
                     <h3>Sistema de Análise de Dados (TotiAnalistaDados)</h3>
                     <p>Projeto completo de análise de dados desenvolvido como trabalho final do curso Toti, aplicando técnicas de data science.</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <img src="https://img.shields.io/badge/Data%20Science-Advanced-green?style=flat-square" alt="Data Science">
+                        <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter">
+                        <img src="https://img.shields.io/badge/Kaggle-Profile-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle">
+                    </div>
+                    
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Jupyter</span>
@@ -384,7 +440,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:juan.solorzano@email.com">juan.solorzano@email.com</a>
+                    <a href="mailto:juanpablo.solorzanoojeda@gmail.com">juanpablo.solorzanoojeda@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
